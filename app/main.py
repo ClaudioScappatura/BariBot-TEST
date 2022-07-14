@@ -738,7 +738,7 @@ def CDR_scraping(url, text, context):
                                                 fulfillmentText += z.text
                                                 fulfillmentText += "\n"
                                             # se il tag non ha fratelli precedenti e successivi, allora stampa prima il testo del padre e poi il proprio (ESCLUSIONE DUPLICATI)
-                                            elif len(z.findPreviousSiblings()) == 0 and len(z.findNextSiblings()) == 0:
+                                            elif len(z.findPreviousSiblings()) == 0 and len(z.findNextSiblings()) == 0 and len(k.text.replace(str(z.text), "")) < 3:
                                                 if printText is True:
                                                     fulfillmentText += k.text.replace(str(z.text), "")
                                                     fulfillmentText += z.text

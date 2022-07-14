@@ -601,7 +601,7 @@ def CR_scraping(url, text, context):
     if context == "CR_INFO":
         fulfillmentText = "Cosa vuoi sapere nello specifico?\n - Cos'è il C.D.R.(cambio di residenza)\n - Come " \
                           "cambiare residenza\n - Documenti da allegare al C.D.R.\n - Cambio residenza cittadini " \
-                          "stranieri\n - Costo del C.D.R.\n - Costo del C.D.R.\n - Tempi necessari per il C.D.R.\n - " \
+                          "stranieri\n - Costo del C.D.R.\n - Tempi necessari per il C.D.R.\n - " \
                           "Moduli per il C.D.R.\n - Orari di apertura ufficio anagrafe "
 
     return fulfillmentText
@@ -881,7 +881,7 @@ def EVENT_scraping(category):
 
         fulfillmentText = re.sub("Presso ", "\nPresso ", fulfillmentText)
     else:
-        fulfillmentText = "Cosa ti interessa sapere sugli EVENTI?\n\n - Quali sono gli eventi di/a Bari\n - Quali sono gli eventi di una determinata categoria (es: Sport)\n"
+        fulfillmentText = "Cosa ti interessa sapere sugli EVENTI?\n\n - Quali sono gli eventi di/a Bari\n - Quali sono gli eventi di una determinata categoria (es: Sport)\n\n Le categorie disponibili sono:\n - Tutte le categorie\n - Cinema\n - Fiera e convegni\n - Musica\n - Spettacoli e danza\n - Sport\n - Teatro\n - Online\n"
 
     return fulfillmentText
 
@@ -1127,7 +1127,7 @@ def webhooks():
             fulfillmentText = APP_scraping(URL_APPS, "BARISOLVE")
         else:
             fulfillmentText = APP_scraping(URL_APPS, None)
-    
+
     # intent info app
     elif query_result.get("intent").get("displayName") == "APP_INFO":
         fulfillmentText = APP_scraping(URL_APPS, "APP_INFO")

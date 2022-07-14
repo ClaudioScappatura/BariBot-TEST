@@ -162,14 +162,14 @@ def cie_scraping(url, text, context):
                           "validità CIE "
 
     if text is not None:
-        if text == "CIE_SANPASQUALE":
+        if text == "CIE_CENTRALE":
             fulfillmentText = "UFFICIO ANAGRAFE CENTRALE - CARTE D'IDENTITÀ\n\nNumero di telefono:\n080/5773357 - " \
                               "3304 - 3782\nNumero di Email PEC:\n " \
                               "ci.anagrafe.comunebari@pec.rupar.puglia.it\n\nORARI DI APERTURA AL " \
                               "PUBBLICO:\n\nLunedì: 9.00 - 12.00\nMartedì: 9.00 - 12.00\nMercoledì: 9.00 - " \
                               "12.00\nGiovedì: 9.00 - 12.00 e 15.30 - 17.00\nVenerdì: 9.00 - 12.00\nSabato: " \
                               "chiuso\n\nIndirizzo: Corso Vittorio Veneto,4 70122 Bari "
-        elif text == "CIE_CENTRALE":
+        elif text == "CIE_SANPASQUALE":
             fulfillmentText = "UFFICIO ANAGRAFE/STATO CIVILE DECENTRATO - DELEGAZIONE CARRASSI-SAN " \
                               "PASQUALE\n\nNumero di telefono :  \n080/5772491 080/5772493  080/5772496  " \
                               "080/5772497\nNumero di Email PEC " \

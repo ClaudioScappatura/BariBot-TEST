@@ -888,6 +888,35 @@ def EVENT_scraping(category):
 
 
 def APP_scraping(url, app_name):
+
+    with open('screapingApp/muvt.txt', 'rb') as f:
+        muvt = pickle.load(f)
+
+    with open('screapingApp/barInforma.txt', 'rb') as f:
+        barInforma = pickle.load(f)
+
+    with open('screapingApp/bariSocial.txt', 'rb') as f:
+        bariSocial = pickle.load(f)
+
+    with open('screapingApp/baRisolve.txt', 'rb') as f:
+        baRisolve = pickle.load(f)
+
+    with open('screapingApp/infoSmartCity.txt', 'rb') as f:
+        infoSmartCity = pickle.load(f)
+
+    with open('screapingApp/bariAiuta.txt', 'rb') as f:
+        bariAiuta = pickle.load(f)
+
+    with open('screapingApp/soupApps.txt', 'rb') as f:
+        soupApps = pickle.load(f)
+
+    with open('screapingApp/tuPassi.txt', 'rb') as f:
+        tuPassi = pickle.load(f)
+
+    with open('screapingApp/apps.txt', 'rb') as f:
+        apps = pickle.load(f)
+    f.close()
+
     if app_name is not None:
         match app_name:
             case "MUVT":
@@ -1143,33 +1172,5 @@ def webhooks():
         "source": "webhookdata"
     }
 
-
-with open('screapingApp/muvt.txt', 'rb') as f:
-    muvt = pickle.load(f)
-
-with open('screapingApp/barInforma.txt', 'rb') as f:
-    barInforma = pickle.load(f)
-
-with open('screapingApp/bariSocial.txt', 'rb') as f:
-    bariSocial = pickle.load(f)
-
-with open('screapingApp/baRisolve.txt', 'rb') as f:
-    baRisolve = pickle.load(f)
-
-with open('screapingApp/infoSmartCity.txt', 'rb') as f:
-    infoSmartCity = pickle.load(f)
-
-with open('screapingApp/bariAiuta.txt', 'rb') as f:
-    bariAiuta = pickle.load(f)
-
-with open('screapingApp/soupApps.txt', 'rb') as f:
-    soupApps = pickle.load(f)
-
-with open('screapingApp/tuPassi.txt', 'rb') as f:
-    tuPassi = pickle.load(f)
-
-with open('screapingApp/apps.txt', 'rb') as f:
-    apps = pickle.load(f)
-f.close()
 
 # app.run(debug=True, port=5000)

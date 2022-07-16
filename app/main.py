@@ -1,4 +1,5 @@
 import os, sys
+sys.setrecursionlimit(100000)
 import unicodedata
 from bs4 import BeautifulSoup
 import re

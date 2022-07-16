@@ -889,33 +889,33 @@ def EVENT_scraping(category):
 
 def APP_scraping(url, app_name):
 
-    with open('screapingApp/muvt.txt', 'rb') as f:
-        muvt = pickle.load(f)
-
-    with open('screapingApp/barInforma.txt', 'rb') as f:
-        barInforma = pickle.load(f)
-
-    with open('screapingApp/bariSocial.txt', 'rb') as f:
-        bariSocial = pickle.load(f)
-
-    with open('screapingApp/baRisolve.txt', 'rb') as f:
-        baRisolve = pickle.load(f)
-
-    with open('screapingApp/infoSmartCity.txt', 'rb') as f:
-        infoSmartCity = pickle.load(f)
-
-    with open('screapingApp/bariAiuta.txt', 'rb') as f:
-        bariAiuta = pickle.load(f)
-
-    with open('screapingApp/soupApps.txt', 'rb') as f:
-        soupApps = pickle.load(f)
-
-    with open('screapingApp/tuPassi.txt', 'rb') as f:
-        tuPassi = pickle.load(f)
-
-    with open('screapingApp/apps.txt', 'rb') as f:
-        apps = pickle.load(f)
-    f.close()
+    with open('screapingApp/muvt.txt', 'rb') as f1:
+        muvt = pickle.load(f1)
+    f1.close()
+    with open('screapingApp/barInforma.txt', 'rb') as f2:
+        barInforma = pickle.load(f2)
+    f2.close()
+    with open('screapingApp/bariSocial.txt', 'rb') as f3:
+        bariSocial = pickle.load(f3)
+    f3.close()
+    with open('screapingApp/baRisolve.txt', 'rb') as f4:
+        baRisolve = pickle.load(f4)
+    f4.close()
+    with open('screapingApp/infoSmartCity.txt', 'rb') as f5:
+        infoSmartCity = pickle.load(f5)
+    f5.close()
+    with open('screapingApp/bariAiuta.txt', 'rb') as f6:
+        bariAiuta = pickle.load(f6)
+    f6.close()
+    with open('screapingApp/soupApps.txt', 'rb') as f7:
+        soupApps = pickle.load(f7)
+    f7.close()
+    with open('screapingApp/tuPassi.txt', 'rb') as f8:
+        tuPassi = pickle.load(f8)
+    f8.close()
+    with open('screapingApp/apps.txt', 'rb') as f9:
+        apps = pickle.load(f9)
+    f9.close()
 
     if app_name is not None:
         match app_name:

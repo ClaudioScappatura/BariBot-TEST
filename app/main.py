@@ -886,7 +886,7 @@ def EVENT_scraping(category):
 
     return fulfillmentText
 
-"""
+
 def APP_scraping(url, app_name):
     if app_name is not None:
         match app_name:
@@ -959,7 +959,7 @@ def APP_scraping(url, app_name):
         fulfillmentText = "\nCosa vuoi sapere riguardo le App?\n\n - Tutte le app di Bari\n - Una specifica app di Bari"
 
     return fulfillmentText
-"""
+
 
 @app.route("/webhooks", methods=["POST"])
 def webhooks():
@@ -1109,7 +1109,7 @@ def webhooks():
     # intent info event
     elif query_result.get("intent").get("displayName") == "EVENT_INFO":
         fulfillmentText = EVENT_scraping("EVENT_INFO")
-    """
+
     # intent APPS
     elif query_result.get("intent").get("displayName") == "APP":
         if query_result["parameters"]["MUVT"] != "":
@@ -1132,7 +1132,7 @@ def webhooks():
     # intent info app
     elif query_result.get("intent").get("displayName") == "APP_INFO":
         fulfillmentText = APP_scraping(URL_APPS, "APP_INFO")
-    """
+
     # if fulfillmentText == "":
     #    fulfillmentText = "Ho ancora tanto da imparare, puoi ripetere?"
 
@@ -1170,4 +1170,6 @@ with open('app/screapingApp/tuPassi.txt', 'rb') as f:
 
 with open('app/screapingApp/apps.txt', 'rb') as f:
     apps = pickle.load(f)
+
+print(APP_scraping(URL_APPS, "INFOSMARTCITY"))
 # app.run(debug=True, port=5000)

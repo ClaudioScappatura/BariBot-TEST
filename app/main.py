@@ -1144,32 +1144,32 @@ def webhooks():
     }
 
 
-with open('app/screapingApp/muvt.txt', 'rb') as f:
+with open('screapingApp/muvt.txt', 'rb') as f:
     muvt = pickle.load(f)
 
-with open('app/screapingApp/barInforma.txt', 'rb') as f:
+with open('screapingApp/barInforma.txt', 'rb') as f:
     barInforma = pickle.load(f)
 
-with open('app/screapingApp/bariSocial.txt', 'rb') as f:
+with open('screapingApp/bariSocial.txt', 'rb') as f:
     bariSocial = pickle.load(f)
 
-with open('app/screapingApp/baRisolve.txt', 'rb') as f:
+with open('screapingApp/baRisolve.txt', 'rb') as f:
     baRisolve = pickle.load(f)
 
-with open('app/screapingApp/infoSmartCity.txt', 'rb') as f:
+with open('screapingApp/infoSmartCity.txt', 'rb') as f:
     infoSmartCity = pickle.load(f)
 
-with open('app/screapingApp/bariAiuta.txt', 'rb') as f:
+with open('screapingApp/bariAiuta.txt', 'rb') as f:
     bariAiuta = pickle.load(f)
 
-with open('app/screapingApp/soupApps.txt', 'rb') as f:
+with open('screapingApp/soupApps.txt', 'rb') as f:
     soupApps = pickle.load(f)
 
-with open('app/screapingApp/tuPassi.txt', 'rb') as f:
+with open('screapingApp/tuPassi.txt', 'rb') as f:
     tuPassi = pickle.load(f)
 
-with open('app/screapingApp/apps.txt', 'rb') as f:
+with open('screapingApp/apps.txt', 'rb') as f:
     apps = pickle.load(f)
 
-print(APP_scraping(URL_APPS, "INFOSMARTCITY"))
+
 # app.run(debug=True, port=5000)

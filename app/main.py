@@ -1146,30 +1146,30 @@ def webhooks():
 
 with open('screapingApp/muvt.txt', 'rb') as f:
     muvt = pickle.load(f)
-
+f.close()
 with open('screapingApp/barInforma.txt', 'rb') as f:
     barInforma = pickle.load(f)
-
+f.close()
 with open('screapingApp/bariSocial.txt', 'rb') as f:
     bariSocial = pickle.load(f)
-
+f.close()
 with open('screapingApp/baRisolve.txt', 'rb') as f:
     baRisolve = pickle.load(f)
-
+f.close()
 with open('screapingApp/infoSmartCity.txt', 'rb') as f:
     infoSmartCity = pickle.load(f)
-
+f.close()
 with open('screapingApp/bariAiuta.txt', 'rb') as f:
     bariAiuta = pickle.load(f)
-
+f.close()
 with open('screapingApp/soupApps.txt', 'rb') as f:
     soupApps = pickle.load(f)
-
+f.close()
 with open('screapingApp/tuPassi.txt', 'rb') as f:
     tuPassi = pickle.load(f)
-
+f.close()
 with open('screapingApp/apps.txt', 'rb') as f:
     apps = pickle.load(f)
-
+f.close()
 
 # app.run(debug=True, port=5000)
